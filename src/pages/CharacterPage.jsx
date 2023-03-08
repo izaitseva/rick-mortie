@@ -4,7 +4,7 @@ import { paths } from "../paths";
 import arrow_back from "../images/arrow_back.png"
 import { fetchCharacterById } from "../charactersAPI";
 
-const CharacterDetails = () => {
+const CharacterPage = () => {
 
     const { id } = useParams();
     const [character, setCharacter] = useState("");
@@ -69,4 +69,4 @@ const CharacterDetails = () => {
     )
 }
 
-export default CharacterDetails;
+export default CharacterPage;

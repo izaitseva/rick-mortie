@@ -6,7 +6,6 @@ import CharacterCard from "../components/CharacterCard";
 
 const Characters = () => {
 
-
     const [searchParams, setSearchParams] = useSearchParams();
     const [characters, setCharacters] = useState([]);
     const [error, setError] = useState(false);

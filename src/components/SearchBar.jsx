@@ -8,12 +8,10 @@ const SearchBar = ({ onSearch }) => {
     }
 
     return (
-        <form>
-            <div className="search-input-wrapper">
-                <FaSistrix size={18} color="rgba(0, 0, 0, 0.54)" />
-                <input className="search-input" type="text" onChange={handleChange} placeholder="Filter by name..." />
-            </div>
-        </form>
+        <div className="search-input-wrapper">
+            <FaSistrix size={18} color="rgba(0, 0, 0, 0.54)" />
+            <input className="search-input" type="text" onChange={handleChange} placeholder="Filter by name..." />
+        </div>
     )
 }
 

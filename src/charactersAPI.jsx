@@ -1,18 +1,15 @@
 import axios from "axios";
 
-const URL = 'https://rickandmortyapi.com/api';
-const SEARCH_URL = `${URL}/character`;
-// const CHAR_URL = `${URL}/character`;
-const IMAGE_URL = `${SEARCH_URL}/avatar`;
+const URL = 'https://rickandmortyapi.com/api/character';
 
-export const imageUrl = (imagePath) => {
-    return axios.get(`${IMAGE_URL}/${imagePath}`);
+export const fetchCharacterById = (charId) => {
+    return axios.get(`${URL}/${charId}`);
 }
 
-export const getCharacterById = (charId) => {
-    return axios.get(`${SEARCH_URL}/${charId}`);
+export const fetchCharacters = () => {
+    return axios.get(URL);
 }
 
-export const getCharacters = () => {
-    return axios.get(`${SEARCH_URL}`);
+export const fetchFilterCharacters = (characterFilter) => {
+    return axios.get(`${URL}&query=${characterFilter}`);
 }

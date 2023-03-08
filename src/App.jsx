@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import CharacterDetails from './pages/CharacterDetails';
+import CharacterPage from './pages/CharacterPage';
 import Characters from './pages/Characters';
 import Main from './pages/Main';
 import NotFound from './pages/NotFound';
@@ -11,9 +11,9 @@ function App() {
     <Routes>
       <Route path={paths.main} element={<Main />} />
       <Route path={paths.characters} element={<Characters />} />
-      <Route path={paths.characterDetails} element={<CharacterDetails />} />
+      <Route path={paths.characterPage} element={<CharacterPage />} />
       <Route path="*" element={<NotFound />} />
-    </Routes>
+    </Routes >
   );
 }
 

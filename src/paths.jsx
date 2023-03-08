@@ -1,5 +1,5 @@
 export const paths = {
-    main: '/',
+    home: '/',
     characters: '/characters',
     characterPage: '/characters/:id',
 }

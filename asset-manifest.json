@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/rick-mortie/static/css/main.bac0a4fd.css",
+    "main.js": "/rick-mortie/static/js/main.97020ec6.js",
+    "static/media/logo.png": "/rick-mortie/static/media/logo.7025a60a8397a5bdc91d.png",
+    "index.html": "/rick-mortie/index.html",
+    "main.bac0a4fd.css.map": "/rick-mortie/static/css/main.bac0a4fd.css.map",
+    "main.97020ec6.js.map": "/rick-mortie/static/js/main.97020ec6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bac0a4fd.css",
+    "static/js/main.97020ec6.js"
+  ]
+}

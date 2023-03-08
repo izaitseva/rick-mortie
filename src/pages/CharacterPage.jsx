@@ -62,7 +62,7 @@ const CharacterDetails = () => {
                         </li>
                         <li>
                             <h2>Type</h2>
-                            <p>{character.type === "" ? <p>Unknown</p> : character.type}</p>
+                            <p>{character.type === "" ? "Unknown" : character.type}</p>
                         </li>
                     </ul>
                 </div>}

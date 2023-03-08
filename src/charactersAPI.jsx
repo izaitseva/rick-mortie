@@ -6,10 +6,10 @@ export const fetchCharacterById = (charId) => {
     return axios.get(`${URL}/${charId}`);
 }
 
-export const fetchCharacters = () => {
-    return axios.get(URL);
+export const fetchCharacters = (name) => {
+    return axios.get(`${URL}/?name=${name ?? ''}`);
 }
 
 export const fetchFilterCharacters = (characterFilter) => {
-    return axios.get(`${URL}&query=${characterFilter}`);
+    return axios.get(`${URL}?name=${characterFilter}`);
 }

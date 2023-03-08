@@ -1,29 +1,31 @@
 // import { useState } from "react";
+import { useState } from "react";
 import { FaSistrix } from "react-icons/fa";
 // import { fetchFilterCharacters } from "../charactersAPI";
 
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
 
-    // const [search, setSearch] = useState("");
+    const [query, setQuery] = useState("");
 
-    // const handleChange = e => {
-    //     const newSearchValue = e.target.value.toLowerCase();
-    //     setSearch(newSearchValue);
-    // }
+    const handleChange = e => {
+        const newSearchValue = e.target.value.toLowerCase();
+        setQuery(newSearchValue);
+    }
 
-    // const handleSubmit = e => {
-    //     e.preventDefault();
-    //     if (search.trim() === '') {
-    //         return;
-    //     }
-    //     return onSearch.filter(character => character.name.includes(search))
-    // }
+    const handleSubmit = e => {
+        console.log(e);
+        e.preventDefault();
+        if (query.trim() === '') {
+            return;
+        }
+        onSearch(query)
+    }
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <div className="search-input-wrapper">
                 <FaSistrix size={18} color="rgba(0, 0, 0, 0.54)" />
-                <input className="search-input" type="text" placeholder="Filter by name..." />
+                <input className="search-input" type="text" onChange={handleChange} placeholder="Filter by name..." />
             </div>
         </form>
     )

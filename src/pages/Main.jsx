@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Characters from "./Characters";
 
-const Home = () => {
+const Main = () => {
 
     return (
         <div>
@@ -11,4 +11,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Main;

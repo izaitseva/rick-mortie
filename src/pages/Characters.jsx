@@ -14,8 +14,6 @@ const Characters = () => {
 
     useEffect(() => {
 
-        console.log(searchParams);
-
         const getCharacters = async () => {
             try {
                 setLoading(true);
@@ -30,9 +28,7 @@ const Characters = () => {
         getCharacters();
     }, [searchParams])
 
-
     function onSubmit(value) {
-        console.log(value);
         setSearchParams({ name: `${value}` });
     }
 

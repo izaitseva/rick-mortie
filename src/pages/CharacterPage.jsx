@@ -21,7 +21,6 @@ const CharacterDetails = () => {
             try {
                 setLoading(true);
                 const { data } = await fetchCharacterById(id);
-                console.log(data);
                 setCharacter(data);
             } catch {
                 setError(true);
